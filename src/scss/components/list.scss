@@ -1,0 +1,50 @@
+@use "../utlties/colors" as CO;
+@use "../utlties/mixins" as MX;
+@use "../utlties/screens" as SC;
+
+.toggleBtn {
+  width: 100%;
+  .icon {
+    color: CO.$secondry-color;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10%;
+  }
+  ul {
+    position: absolute;
+    content: "";
+    top: 70px;
+    right: 5%;
+    z-index: 9999;
+    li {
+      color: CO.$secondry-color;
+      padding-inline: 3em;
+      padding-block: 1.2em;
+      background-color: rgba($color: CO.$secondry-color, $alpha: 0.2);
+      text-align: center;
+      &:hover {
+        background-color: rgba($color: CO.$secondry-color, $alpha: 1);
+        color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: calc(SC.$tablet + 1px)) {
+  .toggleBtn {
+    display: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  height: auto;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hide {
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}

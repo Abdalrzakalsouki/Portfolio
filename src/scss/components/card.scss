@@ -1,0 +1,26 @@
+@use "../utlties/colors" as CO;
+
+.card {
+  position: relative;
+  max-width: 500px;
+  height: 120px;
+  color: CO.$secondry-color;
+  margin-top: 60px;
+  transition: transform 0.3 ease-in-out;
+  .card-header {
+    text-align: center;
+    padding: 10px;
+    svg {
+      color: CO.$primary-color;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+  }
+  .card-body {
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

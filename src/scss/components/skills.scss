@@ -1,0 +1,12 @@
+@use "../utlties/mixins" as MX;
+@use "../utlties/colors" as CO;
+
+.conatiner-sk {
+  @include MX.section-panding;
+  h2 {
+    @include MX.heading;
+  }
+  .container-ca {
+    @include MX.gird-colum;
+  }
+}

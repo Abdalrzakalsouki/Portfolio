@@ -1,0 +1,16 @@
+@use "../utlties/colors" as CO;
+@use "../utlties/mixins" as MX;
+
+.container-pr {
+  @include MX.section-panding;
+  position: relative;
+  h2 {
+    @include MX.heading;
+  }
+  .projects {
+    @include MX.gird-colum;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+}

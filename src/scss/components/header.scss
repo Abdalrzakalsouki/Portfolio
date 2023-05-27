@@ -1,0 +1,44 @@
+@use "../utlties/mixins" as MX;
+@use "../utlties/colors" as CO;
+@use "../utlties/screens" as SC;
+
+.header {
+  @include MX.flex;
+  max-height: 80px;
+  max-width: 100%;
+  margin-bottom: 2em;
+  transition: opacity 0.3s ease;
+  .logo {
+    filter: invert(100%) sepia(1%) saturate(3034%) hue-rotate(300deg)
+      brightness(111%) contrast(100%);
+    width: 80px;
+    height: 80px;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  .navbar {
+    @include MX.flex;
+    flex: 1;
+    justify-content: end;
+    margin-right: 20px;
+    li {
+      padding-inline: 20px;
+      cursor: pointer;
+      a {
+        color: CO.$secondry-color;
+        &:hover {
+          color: CO.$primary-color;
+        }
+      }
+    }
+  }
+  @media (max-width: SC.$tablet) {
+    .navbar {
+      display: none;
+    }
+  }
+}
+
+.header.scroll {
+  opacity: 0.5;
+}

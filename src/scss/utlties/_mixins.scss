@@ -1,0 +1,65 @@
+@use "./colors" as CO;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center {
+  @include flex;
+  justify-content: center;
+}
+
+@mixin gird-colum {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px 30px;
+}
+
+@mixin absoulte {
+  position: absolute;
+  content: "";
+}
+
+@mixin absoulte-center {
+  @include absoulte;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin btn {
+  outline: none;
+  background: none;
+  border: 2px solid CO.$primary-color;
+  color: CO.$primary-color;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@mixin btn-hover {
+  box-shadow: 0 0 15px 5px CO.$primary-color;
+  color: black;
+  background: CO.$primary-color;
+}
+
+@mixin section-panding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin heading {
+  color: CO.$primary-color;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 30px;
+}
