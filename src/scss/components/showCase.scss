@@ -15,6 +15,7 @@
       &:hover {
         filter: grayscale(0);
         transform: scale(1.1);
+        box-shadow: 0 0 40px 0 #00ffff;
       }
     }
     h4 {
@@ -22,6 +23,7 @@
       padding: 10px;
       color: white;
       font-size: 20px;
+      margin-bottom: 10px;
     }
     p {
       display: block;
