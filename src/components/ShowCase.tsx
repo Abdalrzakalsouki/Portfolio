@@ -4,18 +4,18 @@ interface ShowCaseData {
   ImgSrc: string;
   title: string;
   descriptipon: string;
+  tools: string;
+  url: string;
 }
 
 function ShowCase(props: ShowCaseData) {
   return (
     <div className="container-sc">
       <div>
+        <h4>{props.title}</h4>
         <img src={props.ImgSrc} alt="Project image" />
-        <div className="overLay">
-          <h4>{props.title}</h4>
-          <button className="view-btn"> View Project </button>
-          <p>{props.descriptipon}</p>
-        </div>
+        <p>{props.descriptipon}</p>
+        <p>{props.tools}</p>
       </div>
     </div>
   );

@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px 30px;
+  place-items: center;
 }
 
 @mixin absoulte {
@@ -49,7 +50,7 @@
 }
 
 @mixin section-panding {
-  padding-top: 120px;
+  padding-top: 160px;
   padding-bottom: 120px;
   margin-left: auto;
   margin-right: auto;

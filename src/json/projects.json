@@ -1,124 +1,120 @@
 {
-  "projects": [
+  "mainProjects": [
     {
-      "image": "",
-      "url": "",
-      "title": "Kasper",
-      "description": "Template using: HTML5, CSS3, JS"
+      "title": "UTrack",
+      "description": "IP Geolocation Application",
+      "tools": "Nextjs13, Typescript, Rest API, SCSS",
+      "url": "https://u-track.vercel.app/home"
     },
     {
-      "image": "",
-      "url": "",
-      "title": "Elzero",
-      "description": "Template using: HTML5, CSS3, JS"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Leon",
-      "description": "Template using: HTML5, CSS3"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Jass",
-      "description": "Website using: HTML5, CSS3, JS"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Writer",
-      "description": "Website using: HTML5, CSS3, Booststrap5, JS"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Book",
-      "description": "Wesbite using: HTML5, CSS3, Booststrap5"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Advice Generator",
-      "description": "App using: React, SCSS"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Todo",
-      "description": "App using: React, CSS3"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Reactor",
-      "description": "CRUD App using: React, react router, rest api, json server"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "NFT",
-      "description": "Card design: HTML5, SCSS"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Bitcoien Dashbored",
-      "description": "dashbored using: HTML5, CSS3"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Social Form",
-      "description": "Form using: HTML5, CSS3"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Social Proof",
-      "description": "Section using: HTML5, CSS3"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "VUE Weather",
-      "description": "Weather app using: Vue, JS, HTML5, CSS3"
-    },
-    {
-      "image": "",
-      "url": "",
-      "title": "Ping Page",
-      "description": "Page using: HTML5, CSS3, JS"
-    },
-    {
-      "image": "",
-      "url": "",
       "title": "Speak",
-      "description": "Chat App using: Node.js, Express.js, Socekt.io, CSS3"
+      "description": "Real Time Chat Application",
+      "tools": "Node.js, Express.js, Socekt.io, CSS3",
+      "url": "https://speak-two.vercel.app"
     },
     {
-      "image": "",
-      "url": "",
+      "title": "Kasper",
+      "description": "Website Template",
+      "tools": "HTML5, CSS3, JS",
+      "url": "https://kasper.onrender.com"
+    },
+    {
+      "title": "Elzero",
+      "description": "Website Template",
+      "tools": "HTML5, CSS3, JS",
+      "url": "https://elzero-template.onrender.com"
+    },
+    {
+      "title": "Generate App",
+      "description": "Website Template",
+      "tools": "HTML5, CSS3",
+      "url": "https://abdalrzakalsouki.github.io/Advice-generator-app"
+    },
+    {
+      "title": "Music Festival",
+      "description": "Website Template (Own Design)",
+      "tools": "Figma, HTML5, CSS3, JS",
+      "url": "https://music-website-omo9.onrender.com"
+    }
+  ],
+  "sideProjects": [
+    {
+      "title": "Leon",
+      "description": "Website Template",
+      "tools": "HTML5, SCSS",
+      "url": "https://leon-template.onrender.com"
+    },
+    {
+      "title": "Todo",
+      "description": "Todo App",
+      "tools": "React, CSS3",
+      "url": "https://todo-sigma-virid.vercel.app"
+    },
+    {
+      "title": "Reactor",
+      "description": "CRUD App",
+      "tools": " React, react router, rest api, json server",
+      "url": ""
+    },
+    {
+      "title": "NFT",
+      "description": "Card Design",
+      "tools": " HTML5, SCSS",
+      "url": "https://nft-preview-card-component-5bde.onrender.com"
+    },
+    {
+      "title": "Social Form",
+      "description": "Section Design",
+      "tools": " HTML5, CSS3",
+      "url": "https://social-media-form.onrender.com"
+    },
+    {
+      "title": "VUE Weather",
+      "description": "Real Time Weather Application",
+      "tools": "Vue, JS, HTML5, CSS3",
+      "url": ""
+    },
+    {
+      "title": "Ping Page",
+      "description": "Page Design",
+      "tools": " HTML5, CSS3, JS",
+      "url": "https://ping-coming-soon-page.onrender.com"
+    },
+    {
       "title": "Tasks",
-      "description": "Rest API using: Node.js, Express.js"
+      "description": "Rest API",
+      "tools": "Node.js, Express.js",
+      "url": ""
     },
     {
-      "image": "",
-      "url": "",
       "title": "Interactive Reating",
-      "description": "Component using: HTML5, CSS3, JS"
+      "description": "Rating Component Design",
+      "tools": "HTML5, CSS3, JS",
+      "url": "https://interactive-rating-component-lc9f.onrender.com"
     },
     {
-      "image": "",
-      "url": "",
       "title": "User Card",
-      "description": "Card using: CSS3"
+      "description": "Card Design",
+      "tools": "CSS3",
+      "url": "https://usercard-7wmn.onrender.com"
     },
     {
-      "image": "",
-      "url": "",
       "title": "Camel Temp",
-      "description": "Weather app using: Node.js, CSS3"
+      "description": "Real Time Weather app",
+      "tools": " Node.js, CSS3",
+      "url": ""
+    },
+    {
+      "title": "Writer",
+      "description": "Website Template",
+      "tools": "HTML5, CSS3, Booststrap5, JS",
+      "url": "https://writer-website.onrender.com"
+    },
+    {
+      "title": "Book",
+      "description": "Website Template",
+      "tools": "HTML5, CSS3, Booststrap5",
+      "url": "https://book-website.onrender.com"
     }
   ]
 }

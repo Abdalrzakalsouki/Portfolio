@@ -5,64 +5,35 @@
   padding: 50px;
   margin: auto;
   div {
+    position: relative;
     img {
-      position: relative;
+      display: block;
       max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-    }
-    .overLay {
-      @include MX.absoulte;
-      width: 400px;
-      height: auto;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      transition: opacity 0.3 ease-in-out;
-      border-radius: 10px;
-      background-color: CO.$secondry-color;
-      z-index: 99;
-    }
-    &:hover {
-      .overLay {
-        opacity: 1;
-      }
-      .view-btn {
-        display: block;
-      }
-      p {
-        display: inline;
+      height: 250px;
+      filter: grayscale(80%);
+      transition: filter 500ms linear, transform 0.3s ease;
+      &:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
       }
     }
     h4 {
-      @include MX.absoulte-center;
-      top: 30%;
-      font-weight: normal;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 20px;
     }
     p {
-      @include MX.absoulte-center;
-      top: 70%;
-      display: none;
-      color: black;
-      line-height: 1.2;
-      z-index: 100;
-      width: 100%;
+      display: block;
       text-align: center;
-      font-weight: lighter;
-    }
-    .view-btn {
-      @include MX.btn;
-      @include MX.absoulte-center;
-      display: none;
-      border: 2px solid black;
-      color: black;
-      transition: background 0.3s ease-in-out;
-      z-index: 100;
-      &:hover {
-        border: none;
-        background-color: CO.$primary-color;
+      &:first-of-type {
+        color: CO.$secondry-color;
+        margin-top: 20px;
+      }
+      &:last-of-type {
+        color: CO.$primary-color;
+        margin-top: 10px;
+        word-spacing: 10px;
       }
     }
   }
