@@ -8,8 +8,8 @@ function Home() {
     <div>
       <Header />
       <Landing />
-      {/* <Skills />
-      <Projects /> */}
+      <Skills />
+      {/* <Projects />  */}
       {/* <List /> */}
     </div>
   );

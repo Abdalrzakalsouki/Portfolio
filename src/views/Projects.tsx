@@ -1,5 +1,5 @@
 import "../css/projects.css";
-import ShowCase from "./ShowCase";
+import ShowCase from "../components/ShowCase";
 import Image1 from "../assets/project1.png";
 function Projects() {
   //!This is just a mockup data (use JSON data for real building)
