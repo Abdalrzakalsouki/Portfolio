@@ -1,0 +1,39 @@
+@use "../utlties/colors" as CO;
+@use "../utlties/mixins" as MX;
+
+.container-sc-s {
+  position: relative;
+  .sub-card {
+    text-align: center;
+    background-color: CO.$card-color;
+    position: relative;
+    width: 320px;
+    color: #ffffff;
+    height: 280px;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-20px);
+    }
+    svg {
+      @include MX.absoulte;
+      left: 0;
+      top: 0;
+      padding: 10px;
+      font-size: 30px;
+      color: CO.$primary-color;
+    }
+    h4 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    p {
+      padding: 10px;
+      &:first-of-type {
+        font-size: 20px;
+      }
+      &:last-of-type {
+        color: CO.$primary-color;
+      }
+    }
+  }
+}

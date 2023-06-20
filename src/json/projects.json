@@ -3,7 +3,7 @@
     {
       "title": "UTrack",
       "description": "IP Geolocation Application",
-      "tools": "Nextjs13, Typescript, Rest API, SCSS",
+      "tools": "Nextjs13, Typescript, RestAPI, SCSS",
       "url": "https://u-track.vercel.app/home"
     },
     {
@@ -26,8 +26,8 @@
     },
     {
       "title": "Generate App",
-      "description": "Website Template",
-      "tools": "HTML5, CSS3",
+      "description": "Adive Generation Application",
+      "tools": "RestAPI, JS, HTML5, CSS3",
       "url": "https://abdalrzakalsouki.github.io/Advice-generator-app"
     },
     {
@@ -109,12 +109,6 @@
       "description": "Website Template",
       "tools": "HTML5, CSS3, Booststrap5, JS",
       "url": "https://writer-website.onrender.com"
-    },
-    {
-      "title": "Book",
-      "description": "Website Template",
-      "tools": "HTML5, CSS3, Booststrap5",
-      "url": "https://book-website.onrender.com"
     }
   ]
 }

@@ -1,6 +1,8 @@
 import "../css/projects.css";
 import ShowCase from "../components/ShowCase";
+import ShowCaseSub from "../components/ShowCaseSub";
 import { mainProjects, sideProjects } from "../json/projects.json";
+import { useState } from "react";
 import image1 from "../assets/UTrack.png";
 import image2 from "../assets/Speak.png";
 import image3 from "../assets/Kasper.png";
@@ -10,6 +12,9 @@ import image6 from "../assets/Music Festival 2023.png";
 
 function Projects() {
   const images = [image1, image2, image3, image4, image5, image6];
+  const [moreProjects, setMoreProjects] = useState<boolean>(false);
+  // const [moreText, setMoreText] = useState<string>("More");
+
   return (
     <div className="container-pr">
       <h2>Projects</h2>
@@ -25,7 +30,22 @@ function Projects() {
             />
           );
         })}
+
+        {moreProjects &&
+          sideProjects.map((subProject) => {
+            return (
+              <ShowCaseSub
+                title={subProject.title}
+                description={subProject.description}
+                url={subProject.url}
+                tools={subProject.tools}
+              />
+            );
+          })}
       </div>
+      <button onClick={() => setMoreProjects(!moreProjects)}>
+        {moreProjects ? "Show Less" : "Show More"}
+      </button>
     </div>
   );
 }

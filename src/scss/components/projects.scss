@@ -1,4 +1,3 @@
-@use "../utlties/colors" as CO;
 @use "../utlties/mixins" as MX;
 
 .container-pr {
@@ -12,5 +11,12 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-content: center;
     align-items: center;
+  }
+  button {
+    @include MX.btn;
+    margin-top: 30px;
+    &:hover {
+      @include MX.btn-hover;
+    }
   }
 }
