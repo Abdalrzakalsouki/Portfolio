@@ -1,0 +1,14 @@
+{
+  "education": [
+    {
+      "title": "University of Dunaújváros",
+      "GPA": "4.5",
+      "certificate": "B.Sc. in Computer Science and Software Engineering",
+      "list": [
+        "Rosatom Hackatom competition 2021 Achieved 12th place in the competition sponsored by MVM Paks Nuclear Power Plant Ltd and Paks II. Ltd",
+        "Dunaújváros Talent Day 2021 Won 2nd place for a presentation on deep fake technology",
+        "Dunaújváros Science Day 2020, got 4th place in the engineering department for research in logging systems"
+      ]
+    }
+  ]
+}

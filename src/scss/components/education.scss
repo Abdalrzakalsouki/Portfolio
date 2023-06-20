@@ -1,0 +1,13 @@
+@use "../utlties/mixins" as MX;
+
+.education-co {
+  position: relative;
+  @include MX.section-panding;
+  h2 {
+    @include MX.heading;
+  }
+  .edc-card-co {
+    padding: 50px;
+    @include MX.flex-center;
+  }
+}

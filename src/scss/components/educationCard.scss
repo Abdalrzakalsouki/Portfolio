@@ -1,0 +1,34 @@
+@use "../utlties/colors" as CO;
+@use "../utlties/mixins" as MX;
+
+.edc-card {
+  background-color: CO.$card-color;
+  color: CO.$secondry-color;
+  padding: 30px;
+  h3,
+  h4 {
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+    span {
+      color: CO.$primary-color;
+      font-size: 20px;
+    }
+  }
+  li {
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  button {
+    @include MX.btn;
+    margin-top: 30px;
+    &:hover {
+      @include MX.btn-hover;
+    }
+  }
+}
