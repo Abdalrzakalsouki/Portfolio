@@ -1,0 +1,13 @@
+@use "../utlties/mixins" as MX;
+
+.experience-co {
+  position: relative;
+  @include MX.section-panding;
+  h2 {
+    @include MX.heading;
+  }
+  .experience-card {
+    @include MX.flex-center;
+    gap: 50px;
+  }
+}

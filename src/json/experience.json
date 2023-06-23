@@ -1,0 +1,35 @@
+{
+  "experience": [
+    {
+      "title": "Frontend developer | Part Time",
+      "company": "ShobVibes",
+      "date": "October 2021 - December 2021",
+      "description": [
+        "Developed new React components resulting in a significant time-saving of up to 20% in data formatting",
+        "Successfully migrated 50% of the codebase to TypeScript, resulting in improved application speed and stability",
+        "Upgraded 80% of NPM packages, effectively resolving all console errors and optimizing the application",
+        "Actively contributed to code reviews on GitHub, collaborating with two fellow programmers to ensure code quality and maintain best practices",
+        "Demonstrated strong communication skills by presenting ideas clearly and actively engaging in team discussions, leading to effective problem-solving and the adoption of optimal solutionsd"
+      ]
+    },
+    {
+      "title": "IT Assistant | Intershipe",
+      "company": "WRAC",
+      "date": "October 2021 - December 2021",
+      "description": [
+        "Help with maintaining and updating the company website",
+        "Suggest ideas and present them to the team",
+        "Learn working with CMS (WIX)"
+      ]
+    },
+    {
+      "title": "Data Research Analyst | Part Time",
+      "company": "Dunaújvárosi Egyetem",
+      "date": "Sep 2020 - Nov 2020",
+      "description": [
+        "Working with data acquisition and process control software",
+        "Store, analyse, and process data among different logging systems"
+      ]
+    }
+  ]
+}

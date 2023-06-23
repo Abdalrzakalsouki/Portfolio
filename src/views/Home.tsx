@@ -3,6 +3,7 @@ import Landing from "./Landing";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
+import Experience from "./Experience";
 function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Home() {
       <Skills />
       <Projects />
       <Education />
+      <Experience />
     </div>
   );
 }

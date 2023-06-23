@@ -1,0 +1,32 @@
+@use "../utlties/colors" as CO;
+@use "../utlties/mixins" as MX;
+
+div {
+  .historyList {
+    position: relative;
+    li {
+      text-align: center;
+      color: CO.$secondry-color;
+      padding: 15px;
+      text-indent: 10px;
+      transition: border-left 0.4s linear;
+      &:hover {
+        color: CO.$primary-color;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+    &::before {
+      @include MX.absoulte;
+      width: 2px;
+      height: 200px;
+      background-color: CO.$primary-color;
+      left: 0;
+      top: 0;
+      z-index: -555;
+    }
+  }
+}
+
+.active-element {
+  border-left: 3px solid CO.$secondry-color;
+}
