@@ -1,5 +1,6 @@
 @use "../utlties/colors" as CO;
 @use "../utlties/mixins" as MX;
+@use "../utlties/screens" as SC;
 
 div {
   .historyList {
@@ -9,7 +10,7 @@ div {
       color: CO.$secondry-color;
       padding: 15px;
       text-indent: 10px;
-      transition: border-left 0.4s linear;
+      transition: border-width 0.4s linear;
       &:hover {
         color: CO.$primary-color;
         background-color: rgba(255, 255, 255, 0.3);
@@ -25,8 +26,21 @@ div {
       z-index: -555;
     }
   }
+  @media screen and (max-width: SC.$tablet) {
+    .historyList {
+      display: flex;
+      &::before {
+        display: none;
+      }
+    }
+    .active-element {
+      border-width: 3px 0 0 0;
+    }
+  }
 }
 
 .active-element {
-  border-left: 3px solid CO.$secondry-color;
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  border-color: CO.$secondry-color;
 }

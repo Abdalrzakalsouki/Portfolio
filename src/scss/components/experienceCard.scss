@@ -1,5 +1,6 @@
 @use "../utlties/colors" as CO;
 @use "../utlties/mixins" as MX;
+@use "../utlties/screens" as SC;
 
 .experience-sub-card {
   @include MX.flex-vertical-center;
@@ -20,13 +21,19 @@
   }
   ul {
     margin-top: 20px;
-    text-indent: 5px;
     color: CO.$secondry-color;
     list-style-type: "►";
     font-size: 12px;
     margin-left: 15px;
+    max-width: 500px;
     li {
       padding: 5px;
     }
+  }
+}
+
+@media screen and (max-width: SC.$tablet) {
+  .experience-sub-card {
+    margin-left: 30px;
   }
 }

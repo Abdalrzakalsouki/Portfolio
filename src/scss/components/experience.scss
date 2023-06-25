@@ -1,4 +1,5 @@
 @use "../utlties/mixins" as MX;
+@use "../utlties/screens" as SC;
 
 .experience-co {
   position: relative;
@@ -9,5 +10,10 @@
   .experience-card {
     @include MX.flex-center;
     gap: 50px;
+  }
+  @media screen and (max-width: SC.$tablet) {
+    .experience-card {
+      flex-direction: column;
+    }
   }
 }
