@@ -1,23 +1,23 @@
-import { useState } from "react";
 import "../css/historyList.css";
 
 interface HistoryListData {
   titles: string[];
+  onActiveChange: (newState: number) => void;
+  currentIndex: number;
 }
 
 const HistorySideList = (props: HistoryListData) => {
   const handleActiveElement = (index: number) => {
-    setActiveElement(index);
+    props.onActiveChange(index);
   };
 
-  const [activeElement, setActiveElement] = useState<number>(0);
   return (
     <div>
       <ul className="historyList">
         {props.titles.map((title, index) => {
           return (
             <li
-              className={activeElement === index ? "active-element" : ""}
+              className={props.currentIndex === index ? "active-element" : ""}
               onClick={() => handleActiveElement(index)}
             >
               {title}
