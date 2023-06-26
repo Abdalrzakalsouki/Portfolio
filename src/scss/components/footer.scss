@@ -1,0 +1,6 @@
+@use "../utlties/colors" as CO;
+footer {
+  color: CO.$secondry-color;
+  text-align: center;
+  padding: 20px;
+}
