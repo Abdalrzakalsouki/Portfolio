@@ -13,10 +13,18 @@ import image6 from "../assets/Music Festival 2023.png";
 function Projects() {
   const images = [image1, image2, image3, image4, image5, image6];
   const [moreProjects, setMoreProjects] = useState<boolean>(false);
-  // const [moreText, setMoreText] = useState<string>("More");
-
+  const [scrollPoistion, SetScrollPosition] = useState<number>(0);
+  const handleMoreProjects = () => {
+    if (moreProjects) {
+      window.scrollTo(0, scrollPoistion);
+      setMoreProjects(false);
+    } else {
+      SetScrollPosition(window.scrollY);
+      setMoreProjects(true);
+    }
+  };
   return (
-    <div className="container-pr">
+    <div className="container-pr" id="projects">
       <h2>Projects</h2>
       <div className="projects">
         {mainProjects.map((project, index) => {
@@ -43,7 +51,7 @@ function Projects() {
             );
           })}
       </div>
-      <button onClick={() => setMoreProjects(!moreProjects)}>
+      <button onClick={handleMoreProjects}>
         {moreProjects ? "Show Less" : "Show More"}
       </button>
     </div>

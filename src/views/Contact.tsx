@@ -1,7 +1,7 @@
 import "../css/contact.css";
 const Contact = () => {
   return (
-    <div className="contact-co">
+    <div className="contact-co" id="contact">
       <h2>Get in touch</h2>
       <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
         <div>

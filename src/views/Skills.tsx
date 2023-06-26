@@ -33,7 +33,7 @@ const data = [
 
 function Skills() {
   return (
-    <div className="conatiner-sk">
+    <div className="conatiner-sk" id="skills">
       <h2>Skills</h2>
       <div className="container-ca">
         {data.map((cardData) => {

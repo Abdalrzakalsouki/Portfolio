@@ -3,7 +3,7 @@ import EducationCard from "../components/EducationCard";
 import "../css/education.css";
 const Education = () => {
   return (
-    <div className="education-co">
+    <div className="education-co" id="education">
       <h2>Education</h2>
       <div className="edc-card-co">
         {education.map((course) => {

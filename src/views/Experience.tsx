@@ -12,7 +12,7 @@ const Experience = () => {
   }
   const job = experience[activeElement];
   return (
-    <div className="experience-co">
+    <div className="experience-co" id="experience">
       <h2>Experience</h2>
       <div className="experience-card">
         <HistorySideList
