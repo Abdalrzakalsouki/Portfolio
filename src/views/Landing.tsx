@@ -4,14 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
 
 function Landing() {
+  const [isOn, setIsOn] = useState<Boolean>(false);
   const handleIsOn = () => {
     setIsOn(true);
     setTimeout(() => {
       setIsOn(false);
     }, 8000);
   };
-  const [isOn, setIsOn] = useState<Boolean>(false);
-
+  const handleContactNavgation = () => {
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView();
+  };
   return (
     <div>
       <div className="conatiner-la">
@@ -29,7 +32,7 @@ function Landing() {
         ></div>
       </div>
       <div className="container-btn">
-        <button>Contact me</button>
+        <button onClick={handleContactNavgation}>Contact me</button>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import "../css/projects.css";
 import ShowCase from "../components/ShowCase";
 import ShowCaseSub from "../components/ShowCaseSub";
 import { mainProjects, sideProjects } from "../json/projects.json";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import image1 from "../assets/UTrack.png";
 import image2 from "../assets/Speak.png";
 import image3 from "../assets/Kasper.png";
@@ -13,18 +13,17 @@ import image6 from "../assets/Music Festival 2023.png";
 function Projects() {
   const images = [image1, image2, image3, image4, image5, image6];
   const [moreProjects, setMoreProjects] = useState<boolean>(false);
-  const [scrollPoistion, SetScrollPosition] = useState<number>(0);
+  const divRef = useRef<HTMLDivElement>(null);
   const handleMoreProjects = () => {
     if (moreProjects) {
-      window.scrollTo(0, scrollPoistion);
+      divRef.current?.scrollIntoView();
       setMoreProjects(false);
     } else {
-      SetScrollPosition(window.scrollY);
       setMoreProjects(true);
     }
   };
   return (
-    <div className="container-pr" id="projects">
+    <div className="container-pr" id="projects" ref={divRef}>
       <h2>Projects</h2>
       <div className="projects">
         {mainProjects.map((project, index) => {

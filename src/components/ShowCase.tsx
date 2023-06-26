@@ -9,9 +9,12 @@ interface ShowCaseData {
 }
 
 function ShowCase(props: ShowCaseData) {
+  const handleProject = () => {
+    window.open(props.url, "_blank");
+  };
   return (
     <div className="container-sc">
-      <div>
+      <div onClick={handleProject}>
         <h4>{props.title}</h4>
         <img src={props.ImgSrc} alt="Project image" />
         <p>{props.descriptipon}</p>

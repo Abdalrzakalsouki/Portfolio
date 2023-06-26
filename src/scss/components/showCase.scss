@@ -2,6 +2,7 @@
 @use "../utlties/mixins" as MX;
 
 .container-sc {
+  cursor: pointer;
   padding: 50px;
   margin: auto;
   div {

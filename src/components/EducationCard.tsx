@@ -8,6 +8,9 @@ interface EducationData {
 }
 
 const EducationCard = (props: EducationData) => {
+  const handleClick = () => {
+    window.open("https://www.uniduna.hu", "_blank");
+  };
   return (
     <div className="edc-card">
       <h3> {props.title} </h3>
@@ -17,7 +20,7 @@ const EducationCard = (props: EducationData) => {
       {props.list.map((item) => {
         return <li>{item}</li>;
       })}
-      <button>Visit Website</button>
+      <button onClick={handleClick}>Visit Website</button>
     </div>
   );
 };

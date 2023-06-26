@@ -16,6 +16,7 @@ import {
   faCodeBranch,
   faCode,
 } from "@fortawesome/free-solid-svg-icons";
+
 const data = [
   { icon: faT, title: "TypeScript", text: "Check types" },
   { icon: faReact, title: "React", text: "Reuse" },

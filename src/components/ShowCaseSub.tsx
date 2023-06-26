@@ -8,6 +8,9 @@ interface ShowCaseSub {
 }
 
 function ShowCaseSub(props: ShowCaseSub) {
+  const handleProject = () => {
+    window.open(props.url, "_blank");
+  };
   return (
     <div className="container-sc-s">
       <div className="sub-card">
@@ -15,7 +18,9 @@ function ShowCaseSub(props: ShowCaseSub) {
         <h4>{props.title}</h4>
         <p>{props.description}</p>
         <p>{props.tools}</p>
-        <button>Open Project</button>
+        {props.url !== "" && (
+          <button onClick={handleProject}>Open Project</button>
+        )}
       </div>
     </div>
   );
