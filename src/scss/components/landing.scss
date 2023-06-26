@@ -1,6 +1,7 @@
 @use "../utlties/mixins" as MX;
 @use "../utlties/colors" as CO;
 @use "../utlties/typegraphy" as TP;
+@use "../utlties/screens" as SC;
 
 @keyframes light-1 {
   0% {
@@ -33,11 +34,11 @@
 div {
   position: relative;
   .conatiner-la {
+    @include MX.section-panding;
     @include MX.flex-center;
     flex-direction: column;
     max-width: 45%;
     margin: auto;
-    padding: 3em;
     border: 2px solid CO.$primary-color;
     color: CO.$secondry-color;
     text-align: center;
