@@ -3,7 +3,7 @@ import { historyHistory } from "../json/experienceHistory.json";
 import { experience } from "../json/experience.json";
 import HistorySideList from "../components/HistorySideList";
 import ExperienceCard from "../components/ExperienceCard";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Experience = () => {
   const [activeElement, setActiveElement] = useState<number>(0);

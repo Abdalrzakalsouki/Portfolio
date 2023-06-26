@@ -1,0 +1,51 @@
+@use "../utlties/colors" as CO;
+@use "../utlties/mixins" as MX;
+
+.contact-co {
+  @include MX.section-panding;
+  position: relative;
+  h2 {
+    @include MX.heading;
+  }
+  .contact-form {
+    @include MX.flex-center;
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 100%;
+      max-width: 500px;
+      padding-block: 20px;
+      label {
+        display: block;
+        color: CO.$secondry-color;
+      }
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        caret-color: CO.$secondry-color;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid CO.$secondry-color;
+        color: CO.$secondry-color;
+        text-align: start;
+        font-size: 14px;
+      }
+      textarea {
+        resize: vertical;
+      }
+      span {
+        color: #ff0000;
+      }
+    }
+    button {
+      @include MX.btn;
+      margin-top: 30px;
+      &:hover {
+        @include MX.btn-hover;
+      }
+    }
+  }
+}
