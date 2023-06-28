@@ -34,8 +34,8 @@
 div {
   position: relative;
   .conatiner-la {
-    @include MX.section-panding;
-    @include MX.flex-center;
+    padding-block: 70px;
+    padding-inline: 50px;
     flex-direction: column;
     max-width: 45%;
     margin: auto;
@@ -53,7 +53,7 @@ div {
       cursor: pointer;
       svg {
         color: CO.$primary-color;
-        font-size: 20px;
+        font-size: 25px;
         @include MX.flex;
       }
       &:hover {
