@@ -1,0 +1,37 @@
+@use "../utlties/mixins" as MX;
+@use "../utlties/colors" as CO;
+
+.social-co {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  div {
+    @include MX.flex-center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 120px;
+    right: -20px;
+    svg {
+      color: CO.$secondry-color;
+      font-size: 25px;
+      padding: 10px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: translateY(-10px);
+        color: CO.$primary-color;
+      }
+    }
+  }
+
+  &::after {
+    @include MX.absoulte;
+    width: 3px;
+    height: 120px;
+    background-color: CO.$secondry-color;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}

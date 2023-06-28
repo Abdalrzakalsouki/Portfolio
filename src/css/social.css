@@ -1,0 +1,50 @@
+.social-co {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+}
+.social-co div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 120px;
+  right: -20px;
+}
+.social-co div svg {
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.social-co div svg:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  color: #00ffff;
+}
+.social-co::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 120px;
+  background-color: #ffffff;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
