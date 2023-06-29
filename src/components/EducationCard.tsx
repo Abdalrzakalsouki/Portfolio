@@ -1,4 +1,5 @@
 import "../css/educationCard.css";
+import { v4 as uuidv4 } from "uuid";
 
 interface EducationData {
   title: string;
@@ -18,7 +19,7 @@ const EducationCard = (props: EducationData) => {
         {props.certificate} | <span>{props.GPA}</span>
       </h4>
       {props.list.map((item) => {
-        return <li>{item}</li>;
+        return <li key={uuidv4()}>{item}</li>;
       })}
       <button onClick={handleClick}>Visit Website</button>
     </div>

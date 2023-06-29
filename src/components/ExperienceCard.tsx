@@ -1,4 +1,5 @@
 import "../css/experienceCard.css";
+import { v4 as uuidv4 } from "uuid";
 
 interface ExperienceCardData {
   title: string;
@@ -16,7 +17,7 @@ const ExperienceCard = (props: ExperienceCardData) => {
       <p>{props.date}</p>
       <ul>
         {props.lists.map((item) => {
-          return <li>{item}</li>;
+          return <li key={uuidv4()}>{item}</li>;
         })}
       </ul>
     </div>

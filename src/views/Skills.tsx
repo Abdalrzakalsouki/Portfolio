@@ -1,5 +1,6 @@
 import "../css/skills.css";
 import Card from "../components/Card";
+import { v4 as uuidv4 } from "uuid";
 import {
   faReact,
   faJs,
@@ -40,6 +41,7 @@ function Skills() {
         {data.map((cardData) => {
           return (
             <Card
+              key={uuidv4()}
               icon={cardData.icon}
               title={cardData.title}
               text={cardData.text}

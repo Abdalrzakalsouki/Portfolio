@@ -4,7 +4,7 @@ import { experience } from "../json/experience.json";
 import HistorySideList from "../components/HistorySideList";
 import ExperienceCard from "../components/ExperienceCard";
 import { useState } from "react";
-
+import { v4 as uuidv4 } from "uuid";
 const Experience = () => {
   const [activeElement, setActiveElement] = useState<number>(0);
   function handleActive(index: number) {
@@ -16,11 +16,13 @@ const Experience = () => {
       <h2>Experience</h2>
       <div className="experience-card">
         <HistorySideList
+          key={uuidv4()}
           titles={historyHistory}
           onActiveChange={handleActive}
           currentIndex={activeElement}
         />
         <ExperienceCard
+          key={uuidv4()}
           title={job.title}
           company={job.company}
           date={job.date}

@@ -1,5 +1,6 @@
 import { education } from "../json/education.json";
 import EducationCard from "../components/EducationCard";
+import { v4 as uuidv4 } from "uuid";
 import "../css/education.css";
 const Education = () => {
   return (
@@ -9,6 +10,7 @@ const Education = () => {
         {education.map((course) => {
           return (
             <EducationCard
+              key={uuidv4()}
               title={course.title}
               GPA={course.GPA}
               certificate={course.certificate}

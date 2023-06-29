@@ -3,6 +3,7 @@ import ShowCase from "../components/ShowCase";
 import ShowCaseSub from "../components/ShowCaseSub";
 import { mainProjects, sideProjects } from "../json/projects.json";
 import { useState, useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
 import image1 from "../assets/UTrack.png";
 import image2 from "../assets/Speak.png";
 import image3 from "../assets/Kasper.png";
@@ -29,6 +30,7 @@ function Projects() {
         {mainProjects.map((project, index) => {
           return (
             <ShowCase
+              key={uuidv4()}
               ImgSrc={images[index]}
               title={project.title}
               descriptipon={project.description}
@@ -42,6 +44,7 @@ function Projects() {
           sideProjects.map((subProject) => {
             return (
               <ShowCaseSub
+                key={uuidv4()}
                 title={subProject.title}
                 description={subProject.description}
                 url={subProject.url}

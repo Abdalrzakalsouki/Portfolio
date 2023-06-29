@@ -1,4 +1,5 @@
 import "../css/historyList.css";
+import { v4 as uuidv4 } from "uuid";
 
 interface HistoryListData {
   titles: string[];
@@ -17,6 +18,7 @@ const HistorySideList = (props: HistoryListData) => {
         {props.titles.map((title, index) => {
           return (
             <li
+              key={uuidv4()}
               className={props.currentIndex === index ? "active-element" : ""}
               onClick={() => handleActiveElement(index)}
             >
