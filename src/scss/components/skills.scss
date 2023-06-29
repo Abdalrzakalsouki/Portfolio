@@ -1,5 +1,6 @@
 @use "../utlties/mixins" as MX;
 @use "../utlties/colors" as CO;
+@use "../utlties/screens" as SC;
 
 .conatiner-sk {
   @include MX.section-panding;
@@ -8,5 +9,11 @@
   }
   .container-ca {
     @include MX.gird-colum;
+  }
+}
+
+@media (max-width: SC.$tablet) {
+  .container-ca {
+    grid-template-columns: unset;
   }
 }

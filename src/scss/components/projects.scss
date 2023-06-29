@@ -8,6 +8,7 @@
   }
   .projects {
     @include MX.gird-colum;
+    grid-gap: unset;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-content: center;
     align-items: center;

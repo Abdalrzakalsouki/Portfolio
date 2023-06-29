@@ -29,6 +29,7 @@ div {
   @media screen and (max-width: SC.$tablet) {
     .historyList {
       display: flex;
+      flex-direction: column;
       &::before {
         display: none;
       }

@@ -1,5 +1,6 @@
 @use "../utlties/colors" as CO;
 @use "../utlties/mixins" as MX;
+@use "../utlties/screens" as SC;
 
 .container-sc-s {
   position: relative;
@@ -10,6 +11,7 @@
     width: 320px;
     color: #ffffff;
     height: 280px;
+    margin-top: 30px;
     transition: transform 0.3s ease;
     &:hover {
       transform: translateY(-20px);
@@ -34,6 +36,14 @@
       &:last-of-type {
         color: CO.$primary-color;
       }
+    }
+  }
+}
+
+@media (max-width: SC.$phone) {
+  .container-sc-s {
+    .sub-card {
+      width: 200px;
     }
   }
 }

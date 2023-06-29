@@ -101,14 +101,24 @@ div {
     }
   }
 
-  @media (max-width: SC.$phone) {
+  @media (max-width: SC.$tablet) {
     .conatiner-la {
       h1 {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 10px;
       }
       h2 {
         font-size: 20px;
+      }
+    }
+  }
+  @media (max-width: SC.$phone) {
+    .conatiner-la {
+      h1 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 15px;
       }
     }
   }
