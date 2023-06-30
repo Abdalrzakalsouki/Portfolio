@@ -16,7 +16,7 @@ const useAnimation = (rootRef: React.RefObject<HTMLDivElement>) => {
           },
           {
             opacity: 1,
-            duration: 3,
+            duration: 10,
             scrollTrigger: {
               trigger: element,
               start: "top center",
