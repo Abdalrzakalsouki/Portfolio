@@ -18,14 +18,18 @@
     right: 5%;
     z-index: 9999;
     li {
-      color: CO.$secondry-color;
+      a {
+        color: CO.$secondry-color;
+        &:hover {
+          color: black;
+        }
+      }
       padding-inline: 3em;
       padding-block: 1.2em;
       background-color: rgba($color: CO.$secondry-color, $alpha: 0.2);
       text-align: center;
       &:hover {
         background-color: rgba($color: CO.$secondry-color, $alpha: 1);
-        color: black;
       }
     }
   }
