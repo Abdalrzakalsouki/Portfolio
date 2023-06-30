@@ -1,6 +1,8 @@
 import "../css/skills.css";
 import Card from "../components/Card";
 import { v4 as uuidv4 } from "uuid";
+import useAnimation from "../useAnimation";
+import { useRef } from "react";
 import {
   faReact,
   faJs,
@@ -34,8 +36,10 @@ const data = [
 ];
 
 function Skills() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useAnimation(sectionRef);
   return (
-    <div className="conatiner-sk" id="skills">
+    <div className="conatiner-sk" id="skills" ref={sectionRef}>
       <h2>Skills</h2>
       <div className="container-ca">
         {data.map((cardData) => {

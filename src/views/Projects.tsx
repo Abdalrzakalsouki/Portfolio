@@ -3,6 +3,7 @@ import ShowCase from "../components/ShowCase";
 import ShowCaseSub from "../components/ShowCaseSub";
 import { mainProjects, sideProjects } from "../json/projects.json";
 import { useState, useRef } from "react";
+import useAnimation from "../useAnimation";
 import { v4 as uuidv4 } from "uuid";
 import image1 from "../assets/UTrack.png";
 import image2 from "../assets/Speak.png";
@@ -15,6 +16,7 @@ function Projects() {
   const images = [image1, image2, image3, image4, image5, image6];
   const [moreProjects, setMoreProjects] = useState<boolean>(false);
   const divRef = useRef<HTMLDivElement>(null);
+  useAnimation(divRef);
   const handleMoreProjects = () => {
     if (moreProjects) {
       divRef.current?.scrollIntoView();

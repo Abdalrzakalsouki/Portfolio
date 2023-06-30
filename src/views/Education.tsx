@@ -1,10 +1,14 @@
 import { education } from "../json/education.json";
 import EducationCard from "../components/EducationCard";
 import { v4 as uuidv4 } from "uuid";
+import useAnimation from "../useAnimation";
+import { useRef } from "react";
 import "../css/education.css";
 const Education = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useAnimation(sectionRef);
   return (
-    <div className="education-co" id="education">
+    <div className="education-co" id="education" ref={sectionRef}>
       <h2>Education</h2>
       <div className="edc-card-co">
         {education.map((course) => {

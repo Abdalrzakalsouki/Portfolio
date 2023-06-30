@@ -2,9 +2,13 @@ import "../css/contact.css";
 import { useForm } from "@formspree/react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useRef } from "react";
+import useAnimation from "../useAnimation";
 const Contact = () => {
   const key = import.meta.env.VITE_FORM_ENDPOINT;
   const [state, handleBackedSubmition] = useForm(`${key}`);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useAnimation(sectionRef);
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .nullable()
@@ -18,7 +22,7 @@ const Contact = () => {
     message: Yup.string().required("Message is required"),
   });
   return (
-    <div className="contact-co" id="contact">
+    <div className="contact-co" id="contact" ref={sectionRef}>
       <h2>Get in touch</h2>
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
