@@ -31,7 +31,7 @@ npm run dev
 
 ## Usage
 
-![Protfolio](./public/Abdulrazzak%20Alsssouki%20-%20portfolio.png)
+![Protfolio](./public/Abdulrazzak%20Alsssouki%20-%20portfolio.webp)
 
 ## url
 

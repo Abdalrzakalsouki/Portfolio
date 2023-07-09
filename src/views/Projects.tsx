@@ -5,12 +5,12 @@ import { mainProjects, sideProjects } from "../json/projects.json";
 import { useState, useRef } from "react";
 import useAnimation from "../useAnimation";
 import { v4 as uuidv4 } from "uuid";
-import image1 from "../assets/UTrack.png";
-import image2 from "../assets/Speak.png";
-import image3 from "../assets/Kasper.png";
-import image4 from "../assets/ELzero Template.png";
-import image5 from "../assets/Advice generator app.png";
-import image6 from "../assets/Music Festival 2023.png";
+import image1 from "../assets/UTrack.webp";
+import image2 from "../assets/Speak.webp";
+import image3 from "../assets/Kasper.webp";
+import image4 from "../assets/ELzero Template.webp";
+import image5 from "../assets/Advice generator app.webp";
+import image6 from "../assets/Music Festival 2023.webp";
 
 function Projects() {
   const images = [image1, image2, image3, image4, image5, image6];
