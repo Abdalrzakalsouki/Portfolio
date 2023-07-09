@@ -25,10 +25,9 @@ function List() {
       <FontAwesomeIcon
         icon={faBars}
         className="icon"
-        aria-hidden="true"
         onClick={() => setShowList(!showList)}
       />
-      <ul aria-hidden="true" className={showList ? "show" : "hide"}>
+      <ul className={showList ? "show" : "hide"}>
         <li>
           <a href="#">Home</a>
         </li>

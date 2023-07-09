@@ -15,13 +15,14 @@
       height: 250px;
       filter: grayscale(80%);
       transition: filter 500ms linear, transform 0.3s ease;
+      object-fit: cover;
       &:hover {
         filter: grayscale(0);
         transform: scale(1.1);
         box-shadow: 0 0 40px 0 #00ffff;
       }
     }
-    h4 {
+    h3 {
       text-align: center;
       padding: 10px;
       color: white;

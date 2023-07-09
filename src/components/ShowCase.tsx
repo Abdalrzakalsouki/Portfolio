@@ -15,7 +15,7 @@ function ShowCase(props: ShowCaseData) {
   return (
     <div className="container-sc">
       <div onClick={handleProject}>
-        <h4>{props.title}</h4>
+        <h3>{props.title}</h3>
         <img src={props.ImgSrc} alt="Project image" />
         <p>{props.descriptipon}</p>
         <p>{props.tools}</p>

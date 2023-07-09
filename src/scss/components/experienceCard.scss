@@ -5,7 +5,7 @@
 .experience-sub-card {
   @include MX.flex-vertical-center;
   align-items: start;
-  h4 {
+  h3 {
     color: CO.$primary-color;
     font-size: 20px;
     padding-block: 5px;

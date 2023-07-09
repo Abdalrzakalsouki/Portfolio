@@ -7,6 +7,7 @@ import Experience from "./Experience";
 import Contact from "./Contact";
 import Social from "./Social";
 import Footer from "./Footer";
+
 function Home() {
   return (
     <div>

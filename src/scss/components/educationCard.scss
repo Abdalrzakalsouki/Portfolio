@@ -20,9 +20,13 @@
       font-size: 20px;
     }
   }
-  li {
-    line-height: 2;
-    font-size: 18px;
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    li {
+      line-height: 2;
+      font-size: 18px;
+    }
   }
 
   button {

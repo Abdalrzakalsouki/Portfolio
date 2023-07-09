@@ -18,9 +18,11 @@ const EducationCard = (props: EducationData) => {
       <h4>
         {props.certificate} | <span>{props.GPA}</span>
       </h4>
-      {props.list.map((item) => {
-        return <li key={uuidv4()}>{item}</li>;
-      })}
+      <ul>
+        {props.list.map((item) => {
+          return <li key={uuidv4()}>{item}</li>;
+        })}
+      </ul>
       <button onClick={handleClick}>Visit Website</button>
     </div>
   );

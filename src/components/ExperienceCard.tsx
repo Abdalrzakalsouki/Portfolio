@@ -11,9 +11,9 @@ interface ExperienceCardData {
 const ExperienceCard = (props: ExperienceCardData) => {
   return (
     <div className="experience-sub-card">
-      <h4>
+      <h3>
         {props.title}, <span>{props.company}</span>
-      </h4>
+      </h3>
       <p>{props.date}</p>
       <ul>
         {props.lists.map((item) => {

@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <div className={`header ${scrolling ? "scroll" : ""}`}>
-      <a href="#">
+      <a href="#" aria-label="Logo">
         <Logo className="logo" />
       </a>
       <ul className="navbar">

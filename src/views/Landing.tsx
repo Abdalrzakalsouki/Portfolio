@@ -18,7 +18,7 @@ function Landing() {
   return (
     <div>
       <div className="conatiner-la">
-        <button onClick={handleIsOn}>
+        <button onClick={handleIsOn} aria-label="search">
           <FontAwesomeIcon icon={faPowerOff} />
         </button>
         <h5>Hi, I am</h5>
