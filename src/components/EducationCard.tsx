@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/educationCard.css";
 import { v4 as uuidv4 } from "uuid";
 
@@ -8,7 +9,7 @@ interface EducationData {
   list: string[];
 }
 
-const EducationCard = (props: EducationData) => {
+const EducationCard = React.memo((props: EducationData) => {
   const handleClick = () => {
     window.open("https://www.uniduna.hu", "_blank");
   };
@@ -26,6 +27,6 @@ const EducationCard = (props: EducationData) => {
       <button onClick={handleClick}>Visit Website</button>
     </div>
   );
-};
+});
 
 export default EducationCard;

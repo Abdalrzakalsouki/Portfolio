@@ -1,5 +1,6 @@
-import "../css/experienceCard.css";
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import "../css/experienceCard.css";
 
 interface ExperienceCardData {
   title: string;
@@ -8,7 +9,7 @@ interface ExperienceCardData {
   lists: string[];
 }
 
-const ExperienceCard = (props: ExperienceCardData) => {
+const ExperienceCard = React.memo((props: ExperienceCardData) => {
   return (
     <div className="experience-sub-card">
       <h3>
@@ -22,6 +23,6 @@ const ExperienceCard = (props: ExperienceCardData) => {
       </ul>
     </div>
   );
-};
+});
 
 export default ExperienceCard;

@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import "../css/card.css";
@@ -8,7 +9,7 @@ interface CardData {
   text: string;
 }
 
-function Card(props: CardData) {
+const Card = React.memo((props: CardData) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -20,6 +21,6 @@ function Card(props: CardData) {
       </div>
     </div>
   );
-}
+});
 
 export default Card;

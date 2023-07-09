@@ -1,5 +1,7 @@
+import React from "react";
 import { AppstoreFilled } from "@ant-design/icons";
 import "../css/showCaseSub.css";
+
 interface ShowCaseSub {
   tools: string;
   title: string;
@@ -7,7 +9,7 @@ interface ShowCaseSub {
   url: string;
 }
 
-function ShowCaseSub(props: ShowCaseSub) {
+const ShowCaseSub = React.memo((props: ShowCaseSub) => {
   const handleProject = () => {
     window.open(props.url, "_blank");
   };
@@ -24,5 +26,5 @@ function ShowCaseSub(props: ShowCaseSub) {
       </div>
     </div>
   );
-}
+});
 export default ShowCaseSub;

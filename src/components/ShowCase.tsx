@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/showCase.css";
 
 interface ShowCaseData {
@@ -8,7 +9,7 @@ interface ShowCaseData {
   url: string;
 }
 
-function ShowCase(props: ShowCaseData) {
+const ShowCase = React.memo((props: ShowCaseData) => {
   const handleProject = () => {
     window.open(props.url, "_blank");
   };
@@ -22,6 +23,6 @@ function ShowCase(props: ShowCaseData) {
       </div>
     </div>
   );
-}
+});
 
 export default ShowCase;

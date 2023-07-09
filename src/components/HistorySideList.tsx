@@ -1,5 +1,6 @@
-import "../css/historyList.css";
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import "../css/historyList.css";
 
 interface HistoryListData {
   titles: string[];
@@ -7,7 +8,7 @@ interface HistoryListData {
   currentIndex: number;
 }
 
-const HistorySideList = (props: HistoryListData) => {
+const HistorySideList = React.memo((props: HistoryListData) => {
   const handleActiveElement = (index: number) => {
     props.onActiveChange(index);
   };
@@ -29,6 +30,6 @@ const HistorySideList = (props: HistoryListData) => {
       </ul>
     </div>
   );
-};
+});
 
 export default HistorySideList;

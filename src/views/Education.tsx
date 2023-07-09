@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import useAnimation from "../useAnimation";
 import { useRef } from "react";
 import "../css/education.css";
+
 const Education = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   useAnimation(sectionRef);
