@@ -17,7 +17,7 @@ const ExperienceCard = React.memo((props: ExperienceCardData) => {
       </h3>
       <p>{props.date}</p>
       <ul>
-        {props.lists.map((item) => {
+        {props.lists.map((item: string) => {
           return <li key={uuidv4()}>{item}</li>;
         })}
       </ul>

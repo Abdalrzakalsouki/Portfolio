@@ -29,7 +29,7 @@ function Projects() {
     <div className="container-pr" id="projects" ref={divRef}>
       <h2>Projects</h2>
       <div className="projects">
-        {mainProjects.map((project, index) => {
+        {mainProjects.map((project, index: number) => {
           return (
             <ShowCase
               key={uuidv4()}

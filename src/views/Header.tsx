@@ -8,7 +8,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollDown = window.pageYOffset;
+      const scrollDown = window.scrollY;
       if (scrollDown > 0) setScrolling(true);
       else setScrolling(false);
     };

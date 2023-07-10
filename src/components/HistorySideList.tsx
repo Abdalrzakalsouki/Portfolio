@@ -16,7 +16,7 @@ const HistorySideList = React.memo((props: HistoryListData) => {
   return (
     <div>
       <ul className="historyList">
-        {props.titles.map((title, index) => {
+        {props.titles.map((title: string, index: number) => {
           return (
             <li
               key={uuidv4()}

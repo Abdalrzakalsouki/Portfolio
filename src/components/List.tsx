@@ -5,7 +5,7 @@ import "../css/list.css";
 
 function List() {
   const [showList, setShowList] = useState<Boolean>(false);
-  const meunRef = useRef<HTMLDivElement | null>(null);
+  const meunRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -20,6 +20,11 @@ function List() {
     };
   });
 
+  const handleClick = (e: React.MouseEvent<HTMLUListElement>) => {
+    e.preventDefault();
+    setShowList(false);
+  };
+
   return (
     <div ref={meunRef} className="toggleBtn">
       <FontAwesomeIcon
@@ -27,7 +32,10 @@ function List() {
         className="icon"
         onClick={() => setShowList(!showList)}
       />
-      <ul className={showList ? "show" : "hide"}>
+      <ul
+        onClick={(e) => handleClick(e)}
+        className={showList ? "show" : "hide"}
+      >
         <li>
           <a href="#">Home</a>
         </li>

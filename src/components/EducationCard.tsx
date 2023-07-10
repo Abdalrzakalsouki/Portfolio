@@ -20,7 +20,7 @@ const EducationCard = React.memo((props: EducationData) => {
         {props.certificate} | <span>{props.GPA}</span>
       </h4>
       <ul>
-        {props.list.map((item) => {
+        {props.list.map((item: string) => {
           return <li key={uuidv4()}>{item}</li>;
         })}
       </ul>
