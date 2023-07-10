@@ -21,7 +21,7 @@ Protfolio built with React.js
 git clone https://github.com/Abdalrzakalsouki/UTrack.git
 
 2- Navigate to project directory:
-cd profilip
+cd profilio
 
 3- Install dependencies:
 npm install
@@ -51,9 +51,9 @@ Live Site URL: (https://portfolio-three-rho-23.vercel.app)
 Continuing Development:
 
 - [ ] Improve the Animation
-- [ ] Improve the List
+- [x] Improve the List
 - [ ] Add loader
-- [ ] Optimize the performance
+- [x] Optimize the performance
 - [ ] Style the mouse cursor
 - [ ] Add testing
 
