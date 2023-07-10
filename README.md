@@ -50,12 +50,7 @@ Live Site URL: (https://portfolio-three-rho-23.vercel.app)
 
 Continuing Development:
 
-- [ ] Improve the Animation
-- [ ] Improve the List
-- [ ] Add loader
-- [ ] Optimize the performance
-- [ ] Style the mouse cursor
-- [ ] Add testing
+- Style the mouse cursor
 
 ## author
 
