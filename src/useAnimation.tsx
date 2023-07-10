@@ -13,15 +13,18 @@ const useAnimation = (rootRef: React.RefObject<HTMLDivElement>) => {
           element,
           {
             opacity: 0,
+            y: 0,
           },
           {
             opacity: 1,
-            duration: 10,
+            y: -60,
+            duration: 3,
+            delay: 0.3,
+            ease: "power3.out",
             scrollTrigger: {
               trigger: element,
-              start: "top center",
-              end: "bottom center",
-              scrub: true,
+              start: "top 80%",
+              once: true,
             },
           }
         );
