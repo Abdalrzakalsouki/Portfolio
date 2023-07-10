@@ -35,7 +35,7 @@ npm run dev
 
 ## url
 
-Live Site URL: (https://portfolio-three-rho-23.vercel.app)
+Live Site URL: (https://abdulrazzakalsssouki.vercel.app)
 
 ## Technologies
 
