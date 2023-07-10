@@ -5,6 +5,7 @@ import "../css/header.css";
 
 function Header() {
   const [scrolling, setScrolling] = useState<Boolean>(false);
+  const [isMobile, setIsMobile] = useState<Boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,9 +13,14 @@ function Header() {
       if (scrollDown > 0) setScrolling(true);
       else setScrolling(false);
     };
+    const handleResize = () => {
+      setIsMobile(window.matchMedia("(max-width: 600px)").matches);
+    };
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -43,7 +49,7 @@ function Header() {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <List />
+      {isMobile && <List />}
     </div>
   );
 }

@@ -20,11 +20,6 @@ function List() {
     };
   });
 
-  const handleClick = (e: React.MouseEvent<HTMLUListElement>) => {
-    e.preventDefault();
-    setShowList(false);
-  };
-
   return (
     <div ref={meunRef} className="toggleBtn">
       <FontAwesomeIcon
@@ -33,7 +28,7 @@ function List() {
         onClick={() => setShowList(!showList)}
       />
       <ul
-        onClick={(e) => handleClick(e)}
+        onClick={() => setShowList(false)}
         className={showList ? "show" : "hide"}
       >
         <li>
@@ -47,6 +42,9 @@ function List() {
         </li>
         <li>
           <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
