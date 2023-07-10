@@ -92,7 +92,7 @@ div {
     }
   }
   .container-btn {
-    margin-top: 4em;
+    margin-block: 4em;
     button {
       @include MX.btn;
       &:hover {

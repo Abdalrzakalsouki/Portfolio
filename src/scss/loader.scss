@@ -1,0 +1,27 @@
+@use "./utlties/mixins" as MX;
+
+.loader-container {
+  @include MX.flex-center;
+  align-items: center;
+  height: 100vh;
+  .loader {
+    display: block;
+    width: 200px;
+    height: 200px;
+    animation: flicker 3s infinite;
+    filter: invert(100%) sepia(1%) saturate(3034%) hue-rotate(300deg)
+      brightness(111%) contrast(100%);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

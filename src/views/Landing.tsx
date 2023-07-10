@@ -1,10 +1,12 @@
 import "../css/landing.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
-
+import useAnimation from "../useAnimation";
 function Landing() {
   const [isOn, setIsOn] = useState<Boolean>(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useAnimation(sectionRef);
   const handleIsOn = () => {
     setIsOn(true);
     setTimeout(() => {
@@ -16,7 +18,7 @@ function Landing() {
     contactSection?.scrollIntoView();
   };
   return (
-    <div>
+    <div ref={sectionRef}>
       <div className="conatiner-la">
         <button onClick={handleIsOn} aria-label="search">
           <FontAwesomeIcon icon={faPowerOff} />
