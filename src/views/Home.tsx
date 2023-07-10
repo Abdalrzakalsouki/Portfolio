@@ -8,7 +8,7 @@ import Experience from "./Experience";
 import Contact from "./Contact";
 import Social from "./Social";
 import Footer from "./Footer";
-import Loader from "../loader";
+import Loader from "../Loader";
 function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
