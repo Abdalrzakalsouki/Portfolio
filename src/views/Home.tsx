@@ -13,12 +13,19 @@ function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const setLoader = setInterval(() => {
-      document.fonts.ready.then(() => {
+    const setLoader = async () => {
+      const dom = (await document.readyState) === "complete";
+      const styles = (await document.styleSheets.length) > 0;
+      const scripts = (await document.scripts.length) > 0;
+      const images = await Array.from(document.images).every(
+        (image) => image.complete
+      );
+      const fonts = await document.fonts.ready;
+      if (dom && styles && scripts && images && fonts) {
         setIsLoading(false);
-        clearInterval(setLoader);
-      });
-    }, 100);
+      }
+    };
+    setTimeout(setLoader, 3000);
   }, []);
 
   return (
