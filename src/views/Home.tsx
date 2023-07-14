@@ -13,9 +13,12 @@ function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
+    const setLoader = setInterval(() => {
+      document.fonts.ready.then(() => {
+        setIsLoading(false);
+        clearInterval(setLoader);
+      });
+    }, 100);
   }, []);
 
   return (
