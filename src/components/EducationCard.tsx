@@ -12,7 +12,7 @@ interface EducationData {
 const EducationCard = React.memo(
   ({ title, GPA, certificate, list }: EducationData) => {
     const handleClick = () => {
-      window.open("https://www.uniduna.hu", "_blank");
+      window.open("https://www.uniduna.hu/en", "_blank");
     };
     return (
       <div className="edc-card">
