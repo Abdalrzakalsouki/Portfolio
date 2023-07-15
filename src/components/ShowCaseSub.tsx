@@ -9,22 +9,22 @@ interface ShowCaseSub {
   url: string;
 }
 
-const ShowCaseSub = React.memo((props: ShowCaseSub) => {
-  const handleProject = () => {
-    window.open(props.url, "_blank");
-  };
-  return (
-    <div className="container-sc-s">
-      <div className="sub-card">
-        <AppstoreFilled />
-        <h4>{props.title}</h4>
-        <p>{props.description}</p>
-        <p>{props.tools}</p>
-        {props.url !== "" && (
-          <button onClick={handleProject}>Open Project</button>
-        )}
+const ShowCaseSub = React.memo(
+  ({ tools, title, description, url }: ShowCaseSub) => {
+    const handleProject = () => {
+      window.open(url, "_blank");
+    };
+    return (
+      <div className="container-sc-s">
+        <div className="sub-card">
+          <AppstoreFilled />
+          <h4>{title}</h4>
+          <p>{description}</p>
+          <p>{tools}</p>
+          {url !== "" && <button onClick={handleProject}>Open Project</button>}
+        </div>
       </div>
-    </div>
-  );
-});
+    );
+  }
+);
 export default ShowCaseSub;

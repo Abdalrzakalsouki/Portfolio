@@ -9,20 +9,22 @@ interface ShowCaseData {
   url: string;
 }
 
-const ShowCase = React.memo((props: ShowCaseData) => {
-  const handleProject = () => {
-    window.open(props.url, "_blank");
-  };
-  return (
-    <div className="container-sc">
-      <div onClick={handleProject}>
-        <h3>{props.title}</h3>
-        <img src={props.ImgSrc} alt="Project image" />
-        <p>{props.descriptipon}</p>
-        <p>{props.tools}</p>
+const ShowCase = React.memo(
+  ({ ImgSrc, title, descriptipon, tools, url }: ShowCaseData) => {
+    const handleProject = () => {
+      window.open(url, "_blank");
+    };
+    return (
+      <div className="container-sc">
+        <div onClick={handleProject}>
+          <h3>{title}</h3>
+          <img src={ImgSrc} alt="Project image" />
+          <p>{descriptipon}</p>
+          <p>{tools}</p>
+        </div>
       </div>
-    </div>
-  );
-});
+    );
+  }
+);
 
 export default ShowCase;

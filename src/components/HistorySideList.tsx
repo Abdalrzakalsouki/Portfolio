@@ -8,28 +8,30 @@ interface HistoryListData {
   currentIndex: number;
 }
 
-const HistorySideList = React.memo((props: HistoryListData) => {
-  const handleActiveElement = (index: number) => {
-    props.onActiveChange(index);
-  };
+const HistorySideList = React.memo(
+  ({ titles, onActiveChange, currentIndex }: HistoryListData) => {
+    const handleActiveElement = (index: number) => {
+      onActiveChange(index);
+    };
 
-  return (
-    <div>
-      <ul className="historyList">
-        {props.titles.map((title: string, index: number) => {
-          return (
-            <li
-              key={uuidv4()}
-              className={props.currentIndex === index ? "active-element" : ""}
-              onClick={() => handleActiveElement(index)}
-            >
-              {title}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-});
+    return (
+      <div>
+        <ul className="historyList">
+          {titles.map((title: string, index: number) => {
+            return (
+              <li
+                key={uuidv4()}
+                className={currentIndex === index ? "active-element" : ""}
+                onClick={() => handleActiveElement(index)}
+              >
+                {title}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+  }
+);
 
 export default HistorySideList;

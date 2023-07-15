@@ -9,24 +9,26 @@ interface EducationData {
   list: string[];
 }
 
-const EducationCard = React.memo((props: EducationData) => {
-  const handleClick = () => {
-    window.open("https://www.uniduna.hu", "_blank");
-  };
-  return (
-    <div className="edc-card">
-      <h3> {props.title} </h3>
-      <h4>
-        {props.certificate} | <span>{props.GPA}</span>
-      </h4>
-      <ul>
-        {props.list.map((item: string) => {
-          return <li key={uuidv4()}>{item}</li>;
-        })}
-      </ul>
-      <button onClick={handleClick}>Visit Website</button>
-    </div>
-  );
-});
+const EducationCard = React.memo(
+  ({ title, GPA, certificate, list }: EducationData) => {
+    const handleClick = () => {
+      window.open("https://www.uniduna.hu", "_blank");
+    };
+    return (
+      <div className="edc-card">
+        <h3> {title} </h3>
+        <h4>
+          {certificate} | <span>{GPA}</span>
+        </h4>
+        <ul>
+          {list.map((item: string) => {
+            return <li key={uuidv4()}>{item}</li>;
+          })}
+        </ul>
+        <button onClick={handleClick}>Visit Website</button>
+      </div>
+    );
+  }
+);
 
 export default EducationCard;

@@ -9,20 +9,22 @@ interface ExperienceCardData {
   lists: string[];
 }
 
-const ExperienceCard = React.memo((props: ExperienceCardData) => {
-  return (
-    <div className="experience-sub-card">
-      <h3>
-        {props.title}, <span>{props.company}</span>
-      </h3>
-      <p>{props.date}</p>
-      <ul>
-        {props.lists.map((item: string) => {
-          return <li key={uuidv4()}>{item}</li>;
-        })}
-      </ul>
-    </div>
-  );
-});
+const ExperienceCard = React.memo(
+  ({ title, company, date, lists }: ExperienceCardData) => {
+    return (
+      <div className="experience-sub-card">
+        <h3>
+          {title}, <span>{company}</span>
+        </h3>
+        <p>{date}</p>
+        <ul>
+          {lists.map((item: string) => {
+            return <li key={uuidv4()}>{item}</li>;
+          })}
+        </ul>
+      </div>
+    );
+  }
+);
 
 export default ExperienceCard;

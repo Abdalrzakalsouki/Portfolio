@@ -9,15 +9,15 @@ interface CardData {
   text: string;
 }
 
-const Card = React.memo((props: CardData) => {
+const Card = React.memo(({ icon, title, text }: CardData) => {
   return (
     <div className="card">
       <div className="card-header">
-        <FontAwesomeIcon icon={props.icon} />
-        <h3>{props.title}</h3>
+        <FontAwesomeIcon icon={icon} />
+        <h3>{title}</h3>
       </div>
       <div className="card-body">
-        <p>{props.text}</p>
+        <p>{text}</p>
       </div>
     </div>
   );
