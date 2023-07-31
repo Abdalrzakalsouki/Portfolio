@@ -54,7 +54,7 @@
       "title": "Reactor",
       "description": "CRUD App",
       "tools": " React, react router, rest api, json server",
-      "url": ""
+      "url": "https://github.com/Abdalrzakalsouki/Reactor"
     },
     {
       "title": "NFT",
@@ -72,7 +72,7 @@
       "title": "VUE Weather",
       "description": "Real Time Weather Application",
       "tools": "Vue, JS, HTML5, CSS3",
-      "url": ""
+      "url": "https://vue-weather-application-62b4e.web.app"
     },
     {
       "title": "Ping Page",
@@ -84,7 +84,7 @@
       "title": "Tasks",
       "description": "Rest API",
       "tools": "Node.js, Express.js",
-      "url": ""
+      "url": "https://github.com/Abdalrzakalsouki/TasksAPI"
     },
     {
       "title": "Interactive Reating",
