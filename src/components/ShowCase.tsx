@@ -2,7 +2,7 @@ import React from "react";
 import "../css/showCase.css";
 
 interface ShowCaseData {
-  ImgSrc: string;
+  ImgSrc?: string;
   title: string;
   descriptipon: string;
   tools: string;
@@ -12,13 +12,13 @@ interface ShowCaseData {
 const ShowCase = React.memo(
   ({ ImgSrc, title, descriptipon, tools, url }: ShowCaseData) => {
     const handleProject = () => {
-      window.open(url, "_blank");
+      if (url) window.open(url, "_blank");
     };
     return (
       <div className="container-sc">
         <div onClick={handleProject}>
           <h3>{title}</h3>
-          <img src={ImgSrc} alt="Project image" />
+          {ImgSrc && <img src={ImgSrc} alt={`${title} preview`} />}
           <p>{descriptipon}</p>
           <p>{tools}</p>
         </div>

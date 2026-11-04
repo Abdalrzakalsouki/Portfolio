@@ -1,34 +1,36 @@
 {
   "experience": [
     {
-      "title": "Frontend developer",
-      "company": "ShobVibes",
-      "date": "October 2021 - December 2021",
+      "title": "Software Engineer, Frontend and Mobile",
+      "company": "Valtes",
+      "date": "September 2023 - Present",
       "description": [
-        "Developed new React components resulting in a significant time-saving of up to 20% in data formatting",
-        "Successfully migrated 50% of the codebase to TypeScript, resulting in improved application speed and stability",
-        "Upgraded 80% of NPM packages, effectively resolving all console errors and optimizing the application",
-        "Actively contributed to code reviews on GitHub, collaborating with two fellow programmers to ensure code quality and maintain best practices",
-        "Demonstrated strong communication skills by presenting ideas clearly and actively engaging in team discussions, leading to effective problem-solving and the adoption of optimal solutionsd"
+        "Built the full frontend of De Mantelzorg App, a cross-platform app for informal caregivers (40+ screens; React Native, Expo, TypeScript), live on both app stores with 10+ municipality and care-organisation partners such as Almere, Emmen and Assen. Winner of the Audience Award, Nationale Zorginnovatieprijs 2024 (awarded to Valtes)",
+        "Worked on all 20+ releases since December 2025 in a two-developer team using sprints, daily standups, Jira, code reviews and CI/CD",
+        "Built the full frontend of Buurtalarm, a community alarm app live on both stores, with push notifications, alerts to nearby residents and map directions",
+        "Customised a Next.js dashboard template as part of a team, working on events and articles management connected to a Strapi CMS, so municipalities can manage their content and branding",
+        "Designed the UI in Figma and built it for older users: high-contrast colours, WCAG 2.1 guidelines and testing with screen readers",
+        "Wrote unit tests (Jest) and end-to-end tests with Playwright (web) and Maestro (mobile); managed app state with Redux, Zustand and TanStack Query",
+        "Contributed to 4 further mobile apps and 3 web projects (UI components, UX improvements, bug fixes)",
+        "Used AI coding tools (Claude, Cursor, ChatGPT) to speed up development, and reviewed and tested all generated code before release"
       ]
     },
     {
-      "title": "IT Assistant",
-      "company": "WRAC",
-      "date": "October 2021 - December 2021",
+      "title": "Self-study and Personal Projects",
+      "company": "Frontend development",
+      "date": "January 2022 - January 2023",
       "description": [
-        "Regularly monitoring the company website for any issues or outdated content, and promptly addressing them to keep the site up-to-date.",
-        "Collaborate with the team by suggesting innovative ideas and improvements",
-        "Learn working with Content Management Systems (WIX) and design tools such Canva"
+        "Learned Next.js and other modern web technologies through self-study and built personal projects"
       ]
     },
     {
-      "title": "Data Research Analyst",
-      "company": "Dunaújvárosi Egyetem",
-      "date": "Sep 2020 - Nov 2020",
+      "title": "Frontend Developer (Part-time)",
+      "company": "Shopvibes",
+      "date": "October 2021 - December 2021",
       "description": [
-        "Working with data acquisition and process control software involves utilizing specialized tools and applications designed to collect, monitor, and manage data in various scientific contexts",
-        "Storing, analyzing, and processing data among different logging systems entails managing and manipulating data across multiple databases."
+        "Developed new features in React.js and fixed existing bugs in a production codebase",
+        "Migrated parts of the codebase from JavaScript to TypeScript",
+        "Improved the UI with Figma, CSS and Material UI, and worked with the team through GitHub pull requests"
       ]
     }
   ]

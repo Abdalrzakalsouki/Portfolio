@@ -1,13 +1,23 @@
 {
   "education": [
     {
+      "title": "HackYourFuture",
+      "GPA": "",
+      "certificate": "Full-Stack Web Development Bootcamp (Feb 2023 - Sep 2023)",
+      "url": "https://www.hackyourfuture.net",
+      "list": [
+        "Hands-on bootcamp covering modern JavaScript, React, Node.js and databases"
+      ]
+    },
+    {
       "title": "University of Dunaújváros",
       "GPA": "4.5",
-      "certificate": "B.Sc. in Computer Science and Software Engineering",
+      "certificate": "B.Sc. in Computer Science and Software Engineering (Sep 2018 - Jan 2022)",
+      "url": "https://www.uniduna.hu/en",
       "list": [
-        "Rosatom Hackatom competition 2021 Achieved 12th place in the competition sponsored by MVM Paks Nuclear Power Plant Ltd and Paks II. Ltd",
-        "Dunaújváros Talent Day 2021 Won 2nd place for a presentation on deep fake technology",
-        "Dunaújváros Science Day 2020, got 4th place in the engineering department for research in logging systems"
+        "6th place at the Rosatom Hackatom online competition",
+        "2nd place at Dunaújváros Talent Day 2021 for a presentation on deepfake technology",
+        "4th place at Dunaújváros Science Day 2020 (engineering department) for research in logging systems"
       ]
     }
   ]

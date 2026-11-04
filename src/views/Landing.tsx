@@ -25,7 +25,7 @@ function Landing() {
         </button>
         <h5>Hi, I am</h5>
         <h1>Abdulrazzak Alsssouki</h1>
-        <h2>Frontend developer</h2>
+        <h2>Frontend &amp; Mobile developer</h2>
         <div
           className={`animation-style square-1 ${isOn ? "animation" : ""}`}
         ></div>

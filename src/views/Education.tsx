@@ -18,6 +18,7 @@ const Education = () => {
               key={uuidv4()}
               title={course.title}
               GPA={course.GPA}
+              url={course.url}
               certificate={course.certificate}
               list={course.list}
             />

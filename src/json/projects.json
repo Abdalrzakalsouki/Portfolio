@@ -1,6 +1,24 @@
 {
   "mainProjects": [
     {
+      "title": "De Mantelzorg App",
+      "description": "Cross-platform app for informal caregivers (Valtes). Audience Award, Nationale Zorginnovatieprijs 2024",
+      "tools": "React Native, Expo, TypeScript, Figma, WCAG 2.1",
+      "url": ""
+    },
+    {
+      "title": "Buurtalarm",
+      "description": "Community alarm app with push notifications and map directions (Valtes)",
+      "tools": "React Native, Expo, TypeScript",
+      "url": ""
+    },
+    {
+      "title": "Pledge (in progress)",
+      "description": "Accountability app: set goals, donate to charity if you miss them",
+      "tools": "React Native, Expo, TypeScript, Supabase",
+      "url": ""
+    },
+    {
       "title": "UTrack",
       "description": "IP Geolocation Application",
       "tools": "Nextjs13, Typescript, RestAPI, SCSS",

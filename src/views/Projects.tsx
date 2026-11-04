@@ -13,7 +13,7 @@ import image5 from "../assets/Advice generator app.webp";
 import image6 from "../assets/Music Festival 2023.webp";
 
 function Projects() {
-  const images = [image1, image2, image3, image4, image5, image6];
+  const images = [undefined, undefined, undefined, image1, image2, image3, image4, image5, image6];
   const [moreProjects, setMoreProjects] = useState<boolean>(false);
   const divRef = useRef<HTMLDivElement>(null);
   useAnimation(divRef);
