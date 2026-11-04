@@ -9,5 +9,8 @@
   .edc-card-co {
     padding: 50px;
     @include MX.flex-center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
   }
 }

@@ -6,6 +6,10 @@
   background-color: CO.$card-color;
   color: CO.$secondry-color;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 420px;
+  max-width: 720px;
   h3,
   h4 {
     margin-bottom: 10px;
@@ -23,6 +27,7 @@
   ul {
     list-style-type: disc;
     padding-left: 20px;
+    margin-bottom: 30px;
     li {
       line-height: 2;
       font-size: 18px;
@@ -31,7 +36,7 @@
 
   button {
     @include MX.btn;
-    margin-top: 30px;
+    margin-top: auto;
     &:hover {
       @include MX.btn-hover;
     }
